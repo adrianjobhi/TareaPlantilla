@@ -1,20 +1,210 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Productos | s/n</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-    <link rel="stylesheet" href="./css/main.css" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Patitos - Virgilio's Quack Club</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous"> <!-- Bootstrap -->
+  <link rel="icon" href="./assets/vir-icono.ico" />
+  <link rel="stylesheet" href="./css/main.css" />
 </head>
 
+<!-- body -->
 <body>
-    <h1>Hello, world!</h1>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-        crossorigin="anonymous"></script>
-</body>
+  <!-- Barra de navegación -->
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light shadow nav-virgilio">
+      <div class="container-fluid">
+        <a class="navbar-brand fw-bold d-flex align-items-center" href="index.html">
+          <img src="./assets/vir-icono.ico" width="40" style="margin: 6px;" alt="Virgilio Logo">Virgilio's Quack Club</a>
+        <!-- Botón (hamburgesa) cuando se achica la pantilla -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="productos.html">Patitos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="carrito.html">Carrito</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contacto.html">Contacto</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <!-- /Barra de navegación -->
+
+  <!-- main -->
+  <main class="py-5">
+    <!-- intro -->
+    <div class="container">
+      <div class="row align-items-end mb-4">
+        <div class="col-md-8">
+          <h1 class="fw-bold mb-2">Patitos del Quack Club</h1>
+          <p class="mb-0">
+            Cada patito aquí fue aprobado personalmente por Virgilio.
+            Elige tu miembro del duck gang con sabiduría.
+          </p>
+        </div>
+        <div class="col-md-4 mt-3 mt-md-0 text-md-end">
+          <a href="carrito.html" class="btn btn-outline-dark">Ver carrito</a>
+        </div>
+      </div>
+      <!-- /intro -->
+
+      <!-- Cards -->
+      <div class="row g-4">
+        <!-- Patito Motociclista -->
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+          <div class="card h-100 shadow-sm border-0">
+            <img src="./assets/patito-motociclista.webp" class="card-img-top" alt="Patito Motociclista">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Patito Motociclista</h5>
+              <p class="card-text mb-2">
+                Sombrero, tatuajes y cero miedo a la velocidad. Ideal para el tablero del coche.
+              </p>
+              <p class="fw-bold mb-3">$149.00 MXN</p>
+              <a href="carrito.html" class="btn btn-virgilio mt-auto">Agregar al carrito</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Patito CEO -->
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+          <div class="card h-100 shadow-sm border-0">
+            <img src="./assets/patito-ceo.webp" class="card-img-top" alt="Patito CEO">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Patito CEO</h5>
+              <p class="card-text mb-2">
+                Traje, papeles y mirada de “cierro tratos mientras floto en la bañera”.
+              </p>
+              <p class="fw-bold mb-3">$159.00 MXN</p>
+              <a href="carrito.html" class="btn btn-virgilio mt-auto">Agregar al carrito</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Patito Gamer -->
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+          <div class="card h-100 shadow-sm border-0">
+            <img src="./assets/patito-gamer.webp" class="card-img-top" alt="Patito Gamer Pro">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Patito Gamer Pro</h5>
+              <p class="card-text mb-2">
+                Audífonos, control y vibes de “una partida más y ya”.
+              </p>
+              <p class="fw-bold mb-3">$139.00 MXN</p>
+              <a href="carrito.html" class="btn btn-virgilio mt-auto">Agregar al carrito</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Patito Clásico -->
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+          <div class="card h-100 shadow-sm border-0">
+            <img src="./assets/patito-clasico.webp" class="card-img-top" alt="Patito Clásico">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Patito Clásico</h5>
+              <p class="card-text mb-2">
+                El OG. Amarillo, cute y listo para cualquier bañera.
+              </p>
+              <p class="fw-bold mb-3">$99.00 MXN</p>
+              <a href="carrito.html" class="btn btn-virgilio mt-auto">Agregar al carrito</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Patito Rapero -->
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+          <div class="card h-100 shadow-sm border-0">
+            <img src="./assets/patito-dj.webp" class="card-img-top" alt="DJ Pato">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">DJ Pato</h5>
+              <p class="card-text mb-2">
+                Audífonos, beats y vibes de fiesta. Ideal para tu setup o tu mesa de mezclas imaginaria.
+              </p>
+              <p class="fw-bold mb-3">$149.00 MXN</p>
+              <a href="carrito.html" class="btn btn-virgilio mt-auto">Agregar al carrito</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Patito Sirena -->
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+          <div class="card h-100 shadow-sm border-0">
+            <img src="./assets/patito-sirena.webp" class="card-img-top" alt="Patito Sirena">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Patito Sirena</h5>
+              <p class="card-text mb-2">
+                Mitad pato, mitad sirena, 100% dramático. Fan del baño de burbujas.
+              </p>
+              <p class="fw-bold mb-3">$159.00 MXN</p>
+              <a href="carrito.html" class="btn btn-virgilio mt-auto">Agregar al carrito</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Patito Doctor -->
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+          <div class="card h-100 shadow-sm border-0">
+            <img src="./assets/ducktor.webp" class="card-img-top" alt="Ducktor">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Ducktor</h5>
+              <p class="card-text mb-2">
+                Bata blanca, estetoscopio y actitud de “saca la lengua y di ahhhh”.
+              </p>
+              <p class="fw-bold mb-3">$169.00 MXN</p>
+              <a href="carrito.html" class="btn btn-virgilio mt-auto">Agregar al carrito</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Patito Fiesta -->
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+          <div class="card h-100 shadow-sm border-0">
+            <img src="./assets/patito-fiesta.webp" class="card-img-top" alt="Patito de Fiesta">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Patito de Fiesta</h5>
+              <p class="card-text mb-2">
+                Sombrero, pastel, regalos y ganas de estar en todas tus fotos.
+              </p>
+              <p class="fw-bold mb-3">$129.00 MXN</p>
+              <a href="carrito.html" class="btn btn-virgilio mt-auto">Agregar al carrito</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <!-- /Cards -->
+  </main>
+  <!-- /main -->
+
+  <!-- Pie de página -->
+  <footer class="py-4 footer-virgilio">
+    <div class="container text-center">
+      <small class="d-block">&copy; 2025 Virgilio’s Quack Club. Todos los patitos reservados.</small>
+      <small class="d-block footer-quote">“Style. Attitude. Quack.” – Virgilio</small>
+    </div>
+  </footer>
+  <!-- /Pie de página -->
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous">
+    </script>
+  </body>
 </html>

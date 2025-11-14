@@ -4,94 +4,232 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Inicio | s/n</title>
+  <title>Virgilio's Quack Club - Patitos con actitud</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-
-  <!-- <link rel="icon" href="./assets/procesador.png" /> -->
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous"> <!-- Bootstrap -->
+  <link rel="icon" href="./assets/vir-icono.ico" />
   <link rel="stylesheet" href="./css/main.css" />
-
-  <!-- <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
-    rel="stylesheet" /> -->
-
-  <!-- <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap"
-    rel="stylesheet" /> -->
 </head>
 
+<!-- body -->
 <body>
   <!-- Barra de navegación -->
   <header>
-    <nav id="navBar">
-      <img src="./assets/procesador.png" alt="Logo de negocio" width="50" />
-      <h1 id="mainTitle" class="pageTitle">Nombre</h1>
+    <nav class="navbar navbar-expand-lg navbar-light shadow nav-virgilio">
+      <div class="container-fluid">
+        <a class="navbar-brand fw-bold d-flex align-items-center" href="index.html">
+          <img src="./assets/vir-icono.ico" width="40" style="margin: 6px;" alt="Virgilio Logo">Virgilio's Quack Club</a>
+        <!-- Botón (hamburgesa) cuando se achica la pantilla -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-      <ul id="navLinks">
-        <li class="navBarItem"><a href="./contacto.html">Contacto</a></li>
-        <li class="navBarItem"><a href="">Productos</a></li>
-        <li class="navBarItem"><a href="./carrito.html">Carrito</a></li>
-        <li class="navBarItem"><a href="./productos.html">Productos</a></li>
-      </ul>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="productos.html">Patitos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="carrito.html">Carrito</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contacto.html">Contacto</a>
+            </li>
+          </ul>
+        </div>
+      </div>
     </nav>
   </header>
+  <!-- /Barra de navegación -->
 
   <!-- Sección Hero -->
-  <section>
-    <h2 class="pageTitle">Construye tu computadora ahora mismo!!!</h2>
-    <img src="./assets/escritorio-gamer-hero.webp" alt="Banner con escritorio gamer neón" />
+  <section class="py-5 hero-virgilio">
+    <div class="container">
+      <div class="row align-items-center g-4">
+        <div class="col-md-6">
+          <p class="text-uppercase small fw-semibold mb-2 text-hero-tag">Members only • Quack with style 🕶️</p>
+          <h1 class="display-4 fw-bold mb-3">Virgilio’s Quack Club</h1>
+          <p class="lead mb-4">
+            El club oficial de patitos de hule con swag, cadena dorada y actitud.
+            Aquí no solo flotan: dominan la bañera, el escritorio y el coche.
+          </p>
+          <div class="d-flex flex-wrap gap-2">
+            <a href="productos.html" class="btn btn-virgilio btn-lg fw-semibold">Ver colección de patitos</a>
+            <a href="#codigo-quack" class="btn btn-outline-light btn-lg">Código del Quack Club</a>
+          </div>
+        </div>
+        <div class="col-md-6 text-center">
+          <img src="./assets/Virgilio.png" class="img-fluid hero-img" alt="Virgilio, fundador del club">
+        </div>
+      </div>
+    </div>
   </section>
+  <!-- /Sección Hero -->
 
-  <!-- Sección de productos -->
   <main>
-    <section>
-      <h2 class="pageTitle">Productos</h2>
-
-      <div class="productRow">
-        <div class="cardProduct">
-          <img src="./assets/terjeta-grafica.webp" alt="Tarjeta gráfica" width="100" />
-          <h3 class="pageTitle">GPU RTX 5090</h3>
-          <p>Tarjeta gráfica de 8VRAM</p>
-          <a href="https://www.nvidia.com/es-la/geforce/graphics-cards/50-series/rtx-5090/" target="_blank">Ver
-            detalles</a>
+    <!-- Sección código del quack club -->
+    <section id="codigo-quack" class="py-5 bg-dark text-light">
+      <div class="container">
+        <div class="row justify-content-center mb-4">
+          <div class="col-lg-8 text-center">
+            <h2 class="fw-bold mb-3">Código del Quack Club</h2>
+            <p class="mb-0">
+              Antes de adoptar a tu primer patito oficial, necesitas conocer las reglas del club.
+            </p>
+          </div>
         </div>
 
-        <div class="cardProduct">
-          <img src="./assets/corei5.png" alt="Procesador" width="100" />
-          <h3 class="pageTitle">Core i5 12.ª generación</h3>
-          <p>PProcesador potente de 4.36 GHz</p>
-          <a href="https://www.intel.la/content/www/xl/es/products/sku/134586/intel-core-i512400-processor-18m-cache-up-to-4-40-ghz/specifications.html"
-            target="_blank">Ver detalles</a>
-        </div>
-
-        <div class="cardProduct">
-          <img src="./assets/monitor.webp" alt="Monitor" width="100" />
-          <h3 class="pageTitle">Monitor 144 hz</h3>
-          <p>Monitor para juegos 1ms RGB</p>
-          <a href="https://www.asus.com/mx/displays-desktops/monitors/tuf-gaming/tuf-gaming-vg279q1r/"
-            target="_blank">Ver detalles</a>
+        <div class="row g-4">
+          <div class="col-md-4">
+            <div class="p-4 rounded-3 h-100 border border-warning-subtle bg-gradient">
+              <h5 class="fw-bold mb-2">Regla #1</h5>
+              <p class="mb-0">
+                Solo entran patitos con estilo. Lentes, casco, outfit, algo. La vibra es obligatoria.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="p-4 rounded-3 h-100 border border-warning-subtle bg-gradient">
+              <h5 class="fw-bold mb-2">Regla #2</h5>
+              <p class="mb-0">
+                Un patito no se compra: se vuelve miembro del club y pasa a ser parte del duck gang.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="p-4 rounded-3 h-100 border border-warning-subtle bg-gradient">
+              <h5 class="fw-bold mb-2">Regla #3</h5>
+              <p class="mb-0">
+                Toda bañera, escritorio o tablero del coche merece al menos un patito aprobado por Virgilio.
+              </p>
+            </div>
+          </div>
         </div>
       </div>
     </section>
+    <!-- /Sección código del quack club -->
+
+    <!-- Patitos destacados -->
+    <section class="py-5">
+      <div class="container">
+        <div class="row justify-content-between align-items-end mb-4">
+          <div class="col-md-8">
+            <h2 class="fw-bold mb-2">Colección Elite del Quack Club</h2>
+            <p class="mb-0">
+              La selección más cercana al corazón (y la cadena dorada) de Virgilio.
+            </p>
+          </div>
+          <div class="col-md-4 text-md-end mt-3 mt-md-0">
+            <a href="productos.html" class="btn btn-outline-dark">Ver todos los patitos</a>
+          </div>
+        </div>
+
+        <div class="row g-4">
+          <!-- Card 1 -->
+          <div class="col-12 col-sm-6 col-lg-4">
+            <div class="card h-100 shadow-sm border-0">
+              <img src="./assets/patito-motociclista.webp" class="card-img-top" alt="Patito Motociclista">
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title">Patito Motociclista</h5>
+                <p class="card-text mb-2">
+                  Sombrero, tatuajes y cero miedo a la velocidad. Ideal para el tablero del coche.
+                </p>
+                <p class="fw-bold mb-3">$149.00 MXN</p>
+                <a href="carrito.html" class="btn btn-virgilio mt-auto">Agregar al carrito</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="col-12 col-sm-6 col-lg-4">
+            <div class="card h-100 shadow-sm border-0">
+              <img src="./assets/ducktor.webp" class="card-img-top" alt="Ducktor">
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title">Ducktor</h5>
+                <p class="card-text mb-2">
+                  Bata blanca, estetoscopio y actitud de “saca la lengua y di ahhhh”.
+                </p>
+                <p class="fw-bold mb-3">$169.00 MXN</p>
+                <a href="carrito.html" class="btn btn-virgilio mt-auto">Agregar al carrito</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="col-12 col-sm-6 col-lg-4">
+            <div class="card h-100 shadow-sm border-0">
+              <img src="./assets/patito-gamer.webp" class="card-img-top" alt="Patito Gamer">
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title">Patito Gamer Pro</h5>
+                <p class="card-text mb-2">
+                  Audífonos, control y vibes de “una partida más y ya”.
+                </p>
+                <p class="fw-bold mb-3">$139.00 MXN</p>
+                <a href="carrito.html" class="btn btn-virgilio mt-auto">Agregar al carrito</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- /Patitos destacados -->
+
+    <!-- Sobre Virgilio -->
+    <section class="py-5 bg-light">
+      <div class="container">
+        <div class="row g-4 align-items-center">
+          <div class="col-md-5 text-center">
+            <img src="./assets/virgilio-real.png" class="img-fluid rounded-3 shadow-sm" alt="Virgilio fundador del club">
+          </div>
+          <div class="col-md-7">
+            <h2 class="fw-bold mb-3">Virgilio, fundador del club</h2>
+            <p>
+              Virgilio no es un simple patito de hule. Es piloto no certificado, influencer no solicitado
+              y líder espiritual autonombrado de todos los patitos con swag del planeta.
+            </p>
+            <p>
+              Con su casco, hélice, lentes oscuros y cadena dorada, decidió crear
+              Virgilio’s Quack Club: un espacio donde cada patito tiene personalidad
+              y cada adopción es una declaración de estilo.
+            </p>
+            <p class="mb-3">
+              Si un patito está en este sitio, es porque pasó por el filtro del jefe.
+              Sí, aquí hay curaduría de alto nivel (de 10 cm de alto, pero alto).
+            </p>
+            <a href="contacto.html" class="btn btn-outline-dark">Hablar con el equipo de Virgilio</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- /Sobre Virgilio -->
+
+    <!-- Cita final -->
+    <section class="py-5 bg-dark text-light text-center">
+      <div class="container">
+        <h2 class="fw-bold mb-3">¿List@ para unirte al Quack Club?</h2>
+        <p class="mb-4">
+          Adopta tu primer patito hoy. Virgilio ya te stalkeó y dice que sí traes vibra.
+        </p>
+        <a href="productos.html" class="btn btn-virgilio btn-lg fw-semibold">Ver todos los patitos</a>
+      </div>
+    </section>
+    <!-- /Cita final -->
   </main>
+  <!-- /main -->
 
   <!-- Pie de página -->
-  <footer>
-    <section>
-      <h4 class="pageTitle">¡Contáctanos!</h4>
-    </section>
-
-    <section>
-      <h4 class="pageTitle">Redes sociales</h4>
-    </section>
-
-    <section>
-      <h4 class="pageTitle">Aviso de privacidad</h4>
-    </section>
+  <footer class="py-4 footer-virgilio">
+    <div class="container text-center">
+      <small class="d-block">&copy; 2025 Virgilio’s Quack Club. Todos los patitos reservados.</small>
+      <small class="d-block footer-quote">“Style. Attitude. Quack.” – Virgilio</small>
+    </div>
   </footer>
+  <!-- /Pie de página -->
+
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
     crossorigin="anonymous"></script>
